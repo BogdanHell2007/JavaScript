@@ -10,11 +10,15 @@ function schimbare(word) {
       else {
          cuv += word[i]
       }
+
+      if(word[i] == " ") {
+         cuv += " "
+      }
    }
    return cuv
 }
 
-let word = "java";
+let word = "java i o ty";
 let newWord = schimbare(word)
 console.log(newWord)
 
