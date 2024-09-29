@@ -24,7 +24,6 @@ function cardcheck2(card){
     let total2 = 0
     let total3 = 0
     
-    
     //iteram prinre numere
     for(let i = 0; i < card.length; i++){
        
@@ -33,7 +32,6 @@ function cardcheck2(card){
             
             //si le inmultim pe acelea cu 2
             array.push(parseInt(card[i]) * 2)
-
         }
     }
     
