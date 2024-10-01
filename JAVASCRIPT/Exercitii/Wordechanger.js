@@ -1,6 +1,6 @@
 function schimbare(word) {
   
-   let cuv = ''
+   let cuv = "";
   
    for(let i = 0; i < word.length; i++){
     
@@ -18,7 +18,7 @@ function schimbare(word) {
    return cuv
 }
 
-let word = "java i o ty";
+let word = "hello";
 let newWord = schimbare(word)
 console.log(newWord)
 
