@@ -1,9 +1,13 @@
 // pagina pentru testarea sau gasirea solutiilor intr o problema
 
-let nr = 87
+function arr(n){
+  
+  let array = [0, 2]
+  for(let i = 2; i < n; i++){
 
-let total = nr / 11
+    array[i] = array[i - 1] + array[i - 2]
+  }
+  return array;
+}
 
-let total2 = total - Int(total)
-
-console.log(total2)
+console.log(arr(4))
