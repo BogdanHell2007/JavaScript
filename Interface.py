@@ -18,9 +18,11 @@ footer = tk.Label(window, text="UTC - 4", bd=1, relief=tk.SUNKEN, anchor='w')
 footer.pack(side=tk.BOTTOM, fill=tk.X)
 
 # Adaugă iconița
-icon = Image.open("logo2.jpg") 
+icon = Image.open("./NotePad#/logo2.jpg") 
 icon = icon.resize((32, 32), Image.LANCZOS)  
 photo = ImageTk.PhotoImage(icon)  
 window.iconphoto(False, photo)  
+
+window.configure(bg = 'black')
 
 window.mainloop()
