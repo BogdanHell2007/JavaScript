@@ -1,3 +1,4 @@
+import os
 import customtkinter as ctk
 
 # Setare aspect
@@ -10,7 +11,8 @@ window.title("NotePad#")
 window.geometry("1000x900")
 
 # Adaugă iconița
-window.after(201, lambda :window.iconbitmap('./NotePad#/logo2.ico'))
+icon_path = os.path.join(os.path.dirname(__file__), 'logo2.ico')
+window.after(201, lambda: window.iconbitmap(icon_path))
 
 # Crearea zonei de text pentru notepad
 text_area = ctk.CTkTextbox(window, wrap='word', font=('Helvetica', 12))
@@ -21,5 +23,4 @@ footer = ctk.CTkLabel(window, text="UTC +3")
 footer.pack(side='bottom', fill='x')
 
 window.mainloop()
-
 
